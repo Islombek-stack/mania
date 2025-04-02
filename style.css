@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(./move02.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.movie-tittle{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: white;
+}
+.movie-title h1{
+    text-shadow: 4px 4px 2px #605e5e;
+}
+.movie-box{
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    color: rgb(210, 207, 207);
+}
+.movie-img{
+    width: 50%;
+
+}
+.movie-info{
+    width: 50%;
+    /* text-align: center; */
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+}
+.movie-info p{
+    font-size: 12px;
+}
+.films-box{
+    width: 270px;
+    height: 220px;
+    display: flex;
+    background-color: #525151;
+    margin: 8px;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 14px;
+    transition: all 0.5s linear;
+    
+}
+.movie-name{
+    color: rgb(218, 193, 193);
+    text-transform: uppercase;
+    font-size: 15px;
+    
+}
+.films-box:hover{
+    box-shadow: 2px 2px 5px #666 ;
+    transform: scale(1.050);
+    transition: all 0.5s ease-in-out;
+   
+}
+.movie-img img{
+    width: 150px;
+}
+
+.form-input input{
+    height: 20px;
+    width: 150px;
+    border-radius: 5px;
+    border: none;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
