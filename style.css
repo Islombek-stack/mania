@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,81 +6,126 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    font-family: Arial, Helvetica, sans-serif;
 }
-.container{
+
+.container {
     width: 80%;
     margin: 0 auto;
 }
-.movie-tittle{
-    display: flex;
+
+.move-title { 
+    display: flex; 
     align-items: center;
     justify-content: space-evenly;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
     color: white;
+    margin-top: 20px;
 }
-.movie-title h1{
-    text-shadow: 4px 4px 2px #605e5e;
+
+.move-title h1 { 
+    text-shadow: 4px 4px 2px #717171;
+    margin: 10px;
 }
-.movie-box{
+
+.move-box {
     width: 100%;
     flex-wrap: wrap;
     display: flex;
-    color: rgb(210, 207, 207);
+    color: white;
 }
-.movie-img{
-    width: 50%;
 
-}
-.movie-info{
+.move-img {
     width: 50%;
-    /* text-align: center; */
+}
+
+.move-text {
+    text-align: center;
+}
+
+.move-info {
+    width: 50%;
     padding-left: 30px;
     display: flex;
     flex-direction: column;
     height: 100%;
-    
 }
-.movie-info p{
+
+.move-info p {
     font-size: 12px;
 }
-.films-box{
+
+.films-box {
     width: 270px;
     height: 220px;
     display: flex;
-    background-color: #525151;
+    background-color: #333;
     margin: 8px;
     border-radius: 10px;
     overflow: hidden;
     font-size: 14px;
     transition: all 0.5s linear;
-    
 }
-.movie-name{
-    color: rgb(218, 193, 193);
-    text-transform: uppercase;
-    font-size: 15px;
-    
-}
-.films-box:hover{
-    box-shadow: 2px 2px 5px #666 ;
-    transform: scale(1.050);
+
+.js-list li:hover {
+    box-sizing: 2px 2px 5px #666;
+    transform: scale(1.05);
     transition: all 0.5s ease-in-out;
-   
 }
-.movie-img img{
+
+.move-img img {
     width: 150px;
 }
 
-.form-input input{
-    height: 20px;
-    width: 150px;
+.form-input input {
+    height: 30px;
+    width: 200px;
     border-radius: 5px;
     border: none;
+    outline-width: 0;
+    padding-left: 10px;
 }
 
-h1{
+.form-input button {
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: red;
     color: white;
-    text-align: center;
+    font-size: 15px;
+}
+
+.js-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.js-list li {
+    width: 200px;
+}
+
+.js-list h3 {
+    font-size: 12px;
+    margin: 0px;
+    color: red;
+    text-transform: uppercase;
+}
+
+.js-list p {
+    font-size: 10px;
+}
+
+.js-select {
+    width: 100px;
+    height: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.lable {
+    font-size: 18px;
+    text-transform: uppercase;
 }

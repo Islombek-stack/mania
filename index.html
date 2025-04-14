@@ -1,26 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <div class="container">
-        <div class="movie-tittle"><br>
-            <img src="./move01.png" alt="" width="200">
-            <h1>KINO MANIA</h1>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="./style.css" />
+      <title>Document</title>
+   </head>
+   <body>
+      <div class="container">
+         <div class="move-title">
+            <img src="./move01.png" alt="" width="200" />
+            <div class="move-text">
+               <h1>KINO MANIA</h1>
+               <label for="" class="lable">Kino janrni tanlang:</label>
+               <select name="user-select" class="js-select">
+                  <option disabled selected>Tanlash</option>
+                  <option value="Action">Action</option>
+                  <option value="Comedy">Comedy</option>
+                  <option value="Fantasy">Fantasy</option>
+                  <option value="Adventure">Adventure</option>
+               </select>
+            </div>
             <form action="" class="form-input">
-                <input type="text">
-                <button>Qidirish</button>
+               <input
+                  type="text"
+                  id="searchInput"
+                  placeholder="Kino nomini kiriting" />
+               <button type="submit">Qidirish</button>
             </form>
-        </div>
-    </div>
-    <div class="movie-box">
-
-    </div>
-    
-    <script src="./movie.js"></script>
-</body>
+         </div>
+         <div class="move-box">
+            <ul class="js-list"></ul>
+         </div>
+      </div>
+      <script src="./films (2).js"></script>
+      <script src="./movie.js"></script>
+   </body>
 </html>
